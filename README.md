@@ -4,7 +4,7 @@
 
 <h1 align="center">高性价比关系指南</h1>
 
-<p align="center"><a href="README.md">简体中文</a> · <a href="README.en.md">English</a> · <a href="index.html?lang=en">English search interface</a></p>
+<p align="center"><a href="README.md">简体中文</a> · <a href="README.en.md">English</a> · <a href="https://yuzhang-zhong.github.io/HowToGetAlong/?lang=en">English search interface</a></p>
 
 <p align="center">关系里那些难开口、想不通、容易受伤的时刻，翻一条能用的建议。</p>
 

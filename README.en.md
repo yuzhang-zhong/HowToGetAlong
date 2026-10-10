@@ -4,7 +4,7 @@
 
 # High-Value Relationship Guide
 
-[简体中文](README.md) · [English](README.en.md) · [English search interface](index.html?lang=en)
+[简体中文](README.md) · [English](README.en.md) · [English search interface](https://yuzhang-zhong.github.io/HowToGetAlong/?lang=en)
 
 Practical advice for the moments when relationships get difficult: starting a hard conversation, responding to good news, handling conflict, making friends, setting boundaries, and staying safe.
 
