@@ -1,0 +1,27 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: 条目格式校验（编号/字段/标签/交叉引用/计数/副本同步）
+        run: node tools/validate.mjs
+      - name: 生成纯提示词精选版
+        run: node tools/build-prompt-only.mjs
+      - name: 检查纯提示词精选版是否已更新
+        run: git diff --exit-code -- skills/relationship-guide/PROMPT-ONLY.md
+      - name: 构建离线单文件
+        run: node tools/offline/build.mjs
+      - name: 上传离线版产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: offline-html
+          path: dist/HowToGetAlong.html

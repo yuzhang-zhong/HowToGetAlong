@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>高性价比关系指南 · 在线检索</title>
+<meta name="description" content="按性价比排好的人际关系建议备选单：可按关键词、章节、证据等级、成本、收益、口径筛选。数据直接取自 book/ 目录。">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#faf8f4; --card:#ffffff; --ink:#22201c; --sub:#6b655c; --line:#e7e2d8;
+  --accent:#0e6f68; --accent-ink:#0a4f4a; --warn:#a04a1e; --a:#0e6f68;
+  --chip:#efece4; --chip-on:#0e6f68; --chip-on-ink:#fff;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.75 "Noto Sans SC","PingFang SC","Microsoft YaHei",-apple-system,"Segoe UI",sans-serif;}
+a{color:var(--a)}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px 80px}
+header{border-bottom:2px solid var(--ink);padding:34px 0 22px}
+header h1{font-size:27px;margin:0 0 6px;letter-spacing:.5px}
+header p{margin:0;color:var(--sub);font-size:14.5px}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+.stat{background:var(--chip);border-radius:6px;padding:2px 10px;font-size:13.5px;color:var(--sub)}
+.stat b{color:var(--ink);font-weight:600}
+.notice{background:#fdf3e7;border:1px solid #ecd9bd;border-radius:8px;padding:10px 14px;margin:18px 0 0;font-size:13.5px;color:#7a4a1a;display:none}
+.notice.show{display:block}
+.filters{position:sticky;top:0;background:var(--bg);z-index:5;padding:14px 0 10px;border-bottom:1px solid var(--line)}
+.frow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0}
+.frow .lbl{font-size:13px;color:var(--sub);width:56px;flex:none}
+input[type=search]{width:100%;padding:9px 12px;border:1.5px solid var(--line);border-radius:8px;font:inherit;background:var(--card);outline:none}
+input[type=search]:focus{border-color:var(--accent)}
+.chip{border:none;background:var(--chip);color:var(--sub);border-radius:999px;padding:2px 12px;font:inherit;font-size:13.5px;cursor:pointer;user-select:none}
+.chip.on{background:var(--chip-on);color:var(--chip-on-ink)}
+select{border:1.5px solid var(--line);border-radius:8px;background:var(--card);font:inherit;font-size:13.5px;padding:2px 6px;color:var(--sub)}
+.clear{margin-left:auto;font-size:13px;color:var(--sub);background:none;border:none;cursor:pointer;text-decoration:underline}
+main{padding-top:8px}
+.count{color:var(--sub);font-size:13.5px;margin:10px 0 6px}
+.chaphead{margin:30px 0 8px;font-size:18px;border-left:4px solid var(--accent);padding-left:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:10px 0}
+.card.flash{outline:2px solid var(--accent);outline-offset:2px}
+.card h3{margin:0 0 4px;font-size:16.5px}
+.card .meta{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+.tag{font-size:12px;border-radius:5px;padding:1px 7px;background:var(--chip);color:var(--sub)}
+.tag.gA{background:#e3efe9;color:#175e37}.tag.gB{background:#f0ecd9;color:#6b5d1e}.tag.gC{background:#efe6e0;color:#8a4b32}
+.tag.t-ex{background:#175e37;color:#fff}.tag.t-hi{background:#2c6e49;color:#fff}.tag.t-md{background:#8a8272;color:#fff}.tag.t-sf{background:#8f1d1d;color:#fff}
+.f{margin:7px 0 0;font-size:14.5px}
+.f b{font-weight:600;color:var(--ink)}
+.f .k{display:inline-block;min-width:3.2em;color:var(--sub);font-weight:600}
+.f .v{display:inline}
+.xref{border-bottom:1px dashed var(--accent);color:var(--accent-ink);cursor:pointer;white-space:nowrap}
+#pop{position:fixed;z-index:20;max-width:340px;background:var(--card);border:1.5px solid var(--accent);border-radius:10px;padding:12px 14px;box-shadow:0 8px 28px rgba(20,16,8,.14);display:none;font-size:14px}
+#pop .t{font-weight:600;margin-bottom:4px}
+#pop .go{margin-top:8px;font-size:13px}
+footer{margin-top:40px;color:var(--sub);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
+@media(max-width:600px){header h1{font-size:22px}.frow .lbl{width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>高性价比关系指南 · 在线检索</h1>
+  <p>18 章 · 274 条 · 每条写明花掉什么、换回什么、证据有多硬。数据直接取自 book/ 目录，正文更新页面跟着变。</p>
+  <div class="stats" id="stats"></div>
+  <div class="notice" id="notice">当前环境读不到 book/ 目录（直接双击打开的本地文件会被浏览器拦截）。请改用离线单文件版，或在仓库目录跑 <code>python -m http.server</code> 后经 http 访问。</div>
+</header>
+
+<div class="filters">
+  <input type="search" id="q" placeholder="搜关键词：道歉、保护令、吵架、搬家、彩礼…（搜全部字段）">
+  <div class="frow"><span class="lbl">章</span><span id="fChap"></span></div>
+  <div class="frow"><span class="lbl">证据</span><span id="fGrade"></span>
+    <span class="lbl" style="width:auto;margin-left:14px">档位</span><span id="fTier"></span>
+    <button class="clear" id="clear">清空全部条件</button></div>
+  <div class="frow"><span class="lbl">收益</span><span id="fBen"></span>
+    <span class="lbl" style="width:auto;margin-left:14px">口径</span><span id="fScope"></span></div>
+  <div class="frow"><span class="lbl">成本≤</span>
+    难受 <select id="cDis"><option value="">不限</option><option>0</option><option>少</option><option>中</option><option>多</option></select>
+    时间 <select id="cTime"><option value="">不限</option><option>0</option><option>少</option><option>中</option><option>多</option></select>
+    毅力 <select id="cWil"><option value="">不限</option><option>否</option><option>些</option><option>是</option></select>
+    <span class="lbl" style="width:auto;margin-left:14px">（选中的值视为上限）</span></div>
+</div>
+
+<main>
+  <div class="count" id="count"></div>
+  <div id="list"></div>
+</main>
+
+<div id="pop"></div>
+
+<footer>
+  出处标注第几章第几条；查不到的如实说。<br>
+  姊妹篇：<a href="https://github.com/eternity4719/HowToLiveBetter" target="_blank" rel="noopener">《高性价比人生指南》</a>（管个人的账，本书管关系的账）。
+  术语看不懂查<a href="docs/术语表.md">术语表</a>。许可：正文 CC BY 4.0，代码 MIT。
+</footer>
+</div>
+
+<!--EMBED--><!-- 离线构建脚本会把章节数据注入到这个位置（见 tools/offline/build.mjs） -->
+<script>
+/* ============================================================
+ * 章节清单（增删章时同步改这里、tools/validate.mjs、tools/offline/build.mjs）
+ * ============================================================ */
+const CHAPTERS = [
+  {n:1,  file:'book/01-别让关系慢慢变淡.md',     name:'别让关系慢慢变淡'},
+  {n:2,  file:'book/02-吵架别吵出事.md',         name:'吵架别吵出事'},
+  {n:3,  file:'book/03-难说的话怎么开口.md',     name:'难说的话怎么开口'},
+  {n:4,  file:'book/04-别陷进危险关系.md',       name:'别陷进危险关系', safe:true},
+  {n:5,  file:'book/05-孤独与交新朋友.md',       name:'孤独与交新朋友'},
+  {n:6,  file:'book/06-职场关系.md',             name:'职场关系'},
+  {n:7,  file:'book/07-亲情与代际.md',           name:'亲情与代际'},
+  {n:8,  file:'book/08-恋爱与分手.md',           name:'恋爱与分手'},
+  {n:9,  file:'book/09-屏幕上的关系.md',         name:'屏幕上的关系'},
+  {n:10, file:'book/10-反面清单.md',             name:'反面清单'},
+  {n:11, file:'book/11-关系结束之后.md',         name:'关系结束之后'},
+  {n:12, file:'book/12-性与亲密.md',             name:'性与亲密'},
+  {n:13, file:'book/13-姻亲与大家庭.md',         name:'姻亲与大家庭'},
+  {n:14, file:'book/14-人情往来的账.md',         name:'人情往来的账'},
+  {n:15, file:'book/15-育儿中的关系.md',         name:'育儿中的关系'},
+  {n:16, file:'book/16-别在网上把自己交出去.md', name:'别在网上把自己交出去'},
+  {n:17, file:'book/17-婚姻的经营与修复.md',     name:'婚姻的经营与修复'},
+  {n:18, file:'book/18-关系里的心理困境.md',     name:'关系里的心理困境'},
+];
+
+/* ============================================================
+ * 性价比档算法——权威实现。
+ * 写作规范与 SKILL 引用此处；改档位规则先改这里。
+ * ============================================================ */
+const COST_W = { 难受:{'0':0,'少':1,'中':2,'多':3}, 时间:{'0':0,'少':1,'中':2,'多':3}, 毅力:{'否':0,'些':1,'是':2} };
+const BEN_W  = { '大':3, '中':2, '小':1 };
+function tierOf(e){
+  if(e.safe) return '安全优先';
+  const cost = COST_W.难受[e.难受] + COST_W.时间[e.时间] + COST_W.毅力[e.毅力];
+  const ben = BEN_W[e.收益];
+  if(ben===3 && cost===0) return '极高';
+  if((ben===3 && cost<=2) || (ben===2 && cost===0)) return '高';
+  return '一般';
+}
+
+/* ---------------- 解析 ---------------- */
+const FIELDS = ['成本','说人话','收益','证据等级','来源','备注'];
+function parseChapter(text, ch){
+  const out=[];
+  const parts = text.split(/^###\s+/m);
+  for(let i=1;i<parts.length;i++){
+    const p = parts[i];
+    const head = p.split('\n')[0];               // “5. 标题”
+    const m = head.match(/^(\d+)\.\s*(.+)$/); if(!m) continue;
+    const body = p.slice(head.length);
+    const tagm = body.match(/<!--\s*成本标签:\s*([^>]+?)-->/);
+    const tag={};
+    if(tagm) tagm[1].split(/[\s,，]+/).forEach(kv=>{
+      const [k,v]=kv.split('='); if(k&&v) tag[k.trim()]=v.trim();
+    });
+    const e = {ch:ch.n, no:+m[1], title:m[2].trim(), chName:ch.name, safe:!!ch.safe,
+               难受:tag['难受']||'', 时间:tag['时间']||'', 毅力:tag['毅力']||'',
+               收益:tag['收益']||'', 口径:tag['口径']||'', grade:'', fields:{}};
+    for(const f of FIELDS){
+      const fm = body.match(new RegExp('^-\\s*'+f+'\\s*[:：]\\s*(.+)$','m'));
+      if(fm) e.fields[f]=fm[1].trim();
+    }
+    e.grade = e.fields['证据等级']||'';
+    out.push(e);
+  }
+  return out;
+}
+
+let ENTRIES=[];
+
+/* ---------------- 状态与筛选 ---------------- */
+const S = {q:'', chap:new Set(), grade:new Set(), tier:new Set(), ben:new Set(),
+           scope:new Set(), dis:'', time:'', wil:''};
+
+function costLE(val, sel){            // 成本按“低<高”排序，sel 是上限
+  if(!sel) return true; if(!val) return false;
+  const order={'0':0,'少':1,'中':2,'些':1,'多':3,'是':2,'否':0};
+  return (order[val]??9) <= (order[sel]??9);
+}
+function match(e){
+  if(S.chap.size && !S.chap.has(e.ch)) return false;
+  if(S.grade.size && !S.grade.has(e.grade)) return false;
+  if(S.tier.size && !S.tier.has(tierOf(e))) return false;
+  if(S.ben.size && !S.ben.has(e.收益)) return false;
+  if(S.scope.size && !S.scope.has(e.口径)) return false;
+  if(!costLE(e.难受,S.dis)||!costLE(e.时间,S.time)||!costLE(e.毅力,S.wil)) return false;
+  if(S.q){
+    const hay=(e.title+' '+e.chName+' '+FIELDS.map(f=>e.fields[f]||'').join(' ')).toLowerCase();
+    if(!S.q.toLowerCase().split(/\s+/).every(w=>w&&hay.includes(w))) return false;
+  }
+  return true;
+}
+
+/* ---------------- 渲染 ---------------- */
+const $=id=>document.getElementById(id);
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function fmt(s){
+  let h=esc(s);
+  h=h.replace(/(https?:\/\/[^\s）)。，、；]+)/g,u=>'<a href="'+u+'" target="_blank" rel="noopener">'+u+'</a>');
+  h=h.replace(/《高性价比人生指南》第\s*(\d+)\s*节/g,
+    (m,n)=>'<a href="https://github.com/eternity4719/HowToLiveBetter#目录" target="_blank" rel="noopener">原书第'+n+'节↗</a>');
+  h=h.replace(/第\s*(\d+)\s*章第\s*(\d+)\s*条/g,
+    (m,c,n)=>'<span class="xref" data-ch="'+c+'" data-no="'+n+'">第'+c+'章第'+n+'条</span>');
+  return h;
+}
+function chipRow(el, items, set){
+  el.innerHTML='';
+  items.forEach(([v,label])=>{
+    const b=document.createElement('button'); b.className='chip'; b.textContent=label;
+    b.onclick=()=>{ set.has(v)?set.delete(v):set.add(v); b.classList.toggle('on'); render(); };
+    el.appendChild(b);
+  });
+}
+function selBind(id, key){
+  $(id).onchange=ev=>{ S[key]=ev.target.value; render(); };
+}
+function render(){
+  const list=$('list'); list.innerHTML='';
+  let n=0, lastCh=0;
+  const frag=document.createDocumentFragment();
+  for(const e of ENTRIES){
+    if(!match(e)) continue; n++;
+    if(e.ch!==lastCh){
+      lastCh=e.ch;
+      const h=document.createElement('h2'); h.className='chaphead';
+      h.textContent=e.ch+'. '+e.chName+(e.safe?'（安全章：按危险与优先级排）':'');
+      frag.appendChild(h);
+    }
+    const t=tierOf(e);
+    const card=document.createElement('div'); card.className='card'; card.id='e-'+e.ch+'-'+e.no;
+    let tags='<span class="tag">第'+e.ch+'章第'+e.no+'条</span>'
+      +'<span class="tag g'+e.grade+'">'+(e.grade||'?')+'</span>'
+      +'<span class="tag t-'+({ '极高':'ex','高':'hi','一般':'md','安全优先':'sf' }[t])+'">'+t+'</span>'
+      +(e.口径?'<span class="tag">'+e.口径+'</span>':'')
+      +(e.收益?'<span class="tag">收益'+e.收益+'</span>':'')
+      +(e.难受?'<span class="tag">难受'+e.难受+'</span>':'')
+      +(e.时间?'<span class="tag">时间'+e.时间+'</span>':'')
+      +(e.毅力?'<span class="tag">毅力'+e.毅力+'</span>':'');
+    card.innerHTML='<h3>'+esc(e.title)+'</h3><div class="meta">'+tags+'</div>'
+      +FIELDS.map(f=>e.fields[f]?'<div class="f"><span class="k">'+f+'</span><span class="v">：'+fmt(e.fields[f])+'</span></div>':'').join('');
+    frag.appendChild(card);
+  }
+  list.appendChild(frag);
+  $('count').textContent= S.q||S.chap.size||S.grade.size||S.tier.size||S.ben.size||S.scope.size||S.dis||S.time||S.wil
+    ? '筛出 '+n+' 条 / 共 '+ENTRIES.length+' 条' : '共 '+n+' 条，按书的顺序排列（章内按性价比/优先级）';
+}
+
+/* ---------------- 交叉引用弹层 ---------------- */
+const pop=$('pop');
+function findEntry(ch,no){ return ENTRIES.find(e=>e.ch===ch && e.no===no); }
+document.addEventListener('click',ev=>{
+  const x=ev.target.closest('.xref'); if(!x){ pop.style.display='none'; return; }
+  const e=findEntry(+x.dataset.ch, +x.dataset.no);
+  if(!e){ pop.textContent='书里没有这条（交叉引用待修）。'; pop.style.display='block'; return; }
+  pop.innerHTML='<div class="t">'+esc(e.title)+'</div>'
+    +'<div>'+(e.fields['说人话']?esc(e.fields['说人话']):'')+'</div>'
+    +'<div class="go"><span class="xref" data-ch="'+e.ch+'" data-no="'+e.no+'" data-jump="1">跳过去 →</span></div>';
+  pop.style.display='block';
+  const r=x.getBoundingClientRect();
+  pop.style.left=Math.min(r.left, innerWidth-360)+'px';
+  pop.style.top=Math.max(10, Math.min(r.bottom+8, innerHeight-160))+'px';
+});
+document.addEventListener('click',ev=>{
+  const j=ev.target.closest('[data-jump]');
+  if(!j) return;
+  pop.style.display='none';
+  ['chap','grade','tier','ben','scope'].forEach(k=>S[k].clear());
+  S.q=''; $('q').value=''; S.dis=S.time=S.wil='';
+  ['cDis','cTime','cWil'].forEach(id=>$(id).value='');
+  document.querySelectorAll('.chip.on').forEach(b=>b.classList.remove('on'));
+  render();
+  const el=document.getElementById('e-'+j.dataset.ch+'-'+j.dataset.no);
+  if(el){ el.scrollIntoView({behavior:'smooth',block:'center'}); el.classList.add('flash');
+    setTimeout(()=>el.classList.remove('flash'),2000); }
+});
+
+/* ---------------- 初始化 ---------------- */
+chipRow($('fChap'),  CHAPTERS.map(c=>[c.n, c.n+' '+c.name]), S.chap);
+chipRow($('fGrade'), [['A','A'],['B','B'],['C','C']], S.grade);
+chipRow($('fTier'),  [['极高','极高'],['高','高'],['一般','一般'],['安全优先','安全优先']], S.tier);
+chipRow($('fBen'),   [['大','收益大'],['中','收益中'],['小','收益小']], S.ben);
+chipRow($('fScope'), [['关系质量','关系质量'],['心理健康','心理健康'],['时间精力','时间精力'],['人身安全','人身安全'],['人身自由','人身自由'],['寿命','寿命'],['金钱','金钱']], S.scope);
+$('q').addEventListener('input',ev=>{S.q=ev.target.value.trim(); render()});
+selBind('cDis','dis'); selBind('cTime','time'); selBind('cWil','wil');
+$('clear').onclick=()=>{
+  S.q='';$('q').value='';['chap','grade','tier','ben','scope'].forEach(k=>S[k].clear());
+  S.dis=S.time=S.wil='';['cDis','cTime','cWil'].forEach(id=>$(id).value='');
+  document.querySelectorAll('.chip.on').forEach(b=>b.classList.remove('on')); render();
+};
+
+(async function(){
+  let results;
+  if(window.EMBEDDED){                       // 离线单文件版：构建脚本注入的数据
+    results = window.EMBEDDED;
+  } else {
+    results = await Promise.all(CHAPTERS.map(c=>
+      fetch(c.file).then(r=>r.ok?r.text():Promise.reject(c.file)).catch(()=>'')
+    ));
+  }
+  let failed=0;
+  CHAPTERS.forEach((c,i)=>{
+    if(!results[i]){failed++;return;}
+    ENTRIES=ENTRIES.concat(parseChapter(results[i],c));
+  });
+  if(failed) $('notice').classList.add('show');
+  ENTRIES.sort((a,b)=>a.ch-b.ch||a.no-b.no);
+  const cnt={A:0,B:0,C:0,'极高':0,'高':0,'一般':0,'安全优先':0};
+  ENTRIES.forEach(e=>{cnt[e.grade]&&(cnt[e.grade]++);cnt[tierOf(e)]++;});
+  $('stats').innerHTML=
+    '<span class="stat">条目 <b>'+ENTRIES.length+'</b></span>'
+    +'<span class="stat">A <b>'+cnt.A+'</b> · B <b>'+cnt.B+'</b> · C <b>'+cnt.C+'</b></span>'
+    +'<span class="stat">极高 <b>'+cnt['极高']+'</b> · 高 <b>'+cnt['高']+'</b> · 一般 <b>'+cnt['一般']+'</b> · 安全优先 <b>'+cnt['安全优先']+'</b></span>'
+    +'<span class="stat">法律信息核验截至 <b>2026-10</b></span>';
+  render();
+})();
+</script>
+</body>
+</html>
