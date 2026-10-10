@@ -1,0 +1,44 @@
+name: 提议新建议
+description: 提交有来源支持、适合补进指南的关系建议
+title: "[新建议] "
+labels: ["content proposal"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: 适用场景或拟放入的章节
+      placeholder: 例如，朋友之间借钱
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: 建议做什么
+      description: 用一句日常说法描述动作，并说明它解决什么关系问题。
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 一手来源
+      description: 如有研究或法律依据，请提供 DOI、期刊页面或官方文件链接。经验类建议可以留空，并在下方说明。
+  - type: checkboxes
+    id: experience
+    attributes:
+      label: 依据类型
+      options:
+        - label: 这是经验或公认做法，愿意按 C 级标注并说明经验依据。
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 研究设计、关键数字和适用范围
+      description: 照来源写明研究对象、方法、结果和局限；不要转引二手文章。
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已阅读仓库的写作规范，并核对了原始来源。
+          required: true

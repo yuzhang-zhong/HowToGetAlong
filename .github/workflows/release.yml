@@ -1,0 +1,46 @@
+name: 离线版发布
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README*.md
+      - index.html
+      - assets/**
+      - book/**
+      - docs/**
+      - tools/offline/**
+      - tools/lib/**
+      - .github/workflows/release.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: offline-release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: 构建离线单文件
+        run: node tools/offline/build.mjs
+      - name: 发布最新版
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git tag -f guide-latest
+          git push -f origin guide-latest
+          notes="正文提交 ${GITHUB_SHA::7}。离线 HTML 随 main 更新自动重建。"
+          if gh release view guide-latest >/dev/null 2>&1; then
+            gh release edit guide-latest --title "关系指南离线版（自动更新）" --notes "$notes"
+          else
+            gh release create guide-latest --title "关系指南离线版（自动更新）" --notes "$notes" --latest=false
+          fi
+          gh release upload guide-latest dist/HowToGetAlong.html --clobber

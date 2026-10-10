@@ -4,6 +4,8 @@
 
 <h1 align="center">高性价比关系指南</h1>
 
+<p align="center"><a href="README.md">简体中文</a> · <a href="README.en.md">English</a> · <a href="index.html?lang=en">English search interface</a></p>
+
 <p align="center">关系里那些难开口、想不通、容易受伤的时刻，翻一条能用的建议。</p>
 
 朋友报喜时怎么回应？拒绝的话怎么说出口？争吵升温时怎样停下来？这本指南也谈交朋友、职场和家人、性与亲密，以及危险关系里的求助和自我保护。
@@ -11,10 +13,10 @@
 全书 18 章、274 条建议。每条都写清要花多少难受、时间和毅力，可能换来什么，以及证据等级和出处。翻到正遇上的问题，挑一条试试就好。
 
 <p align="center">
-  <img src="assets/four-panel-friendship.png" width="900" alt="四格漫画：朋友看到好消息后放下手机、认真倾听、追问细节，最后两人一起笑起来">
+  <img src="assets/four-panel-friendship.png" width="900" alt="四格漫画：一台机器人看到朋友的好消息后放下手机、认真倾听、追问细节，最后两台机器人一起笑起来">
 </p>
 
-<p align="center"><sub>好消息值得认真接住。见第 1 章第 4 条：<a href="book/01-别让关系慢慢变淡.md">认真回应对方报来的好消息</a>。</sub></p>
+<p align="center"><sub>机器人朋友也会认真接住好消息。见第 1 章第 4 条：<a href="book/01-别让关系慢慢变淡.md">认真回应对方报来的好消息</a>。</sub></p>
 
 > **种子版说明**：全部条目经过三轮 AI 文献检索核实，原文全文尚未逐篇人工复核。引用前请打开来源核对；标注「待人工复核」的条目仍需优先检查。核实过程见[核实记录](docs/核实记录/)。
 
@@ -45,9 +47,9 @@
 
 仓库根目录的 `index.html` 可以按关键词、章节、证据等级、收益量级、口径和三项成本筛选。它还标出性价比档与安全章优先级；点「第 X 章第 Y 条」可以预览关联条目。检索内容直接来自 `book/`，改完正文后重新构建即可同步。
 
-- **在线使用**：在仓库 Settings → Pages → Deploy from a branch，选择 `main` 和 `/`。
+- **在线使用**：[打开检索页](https://yuzhang-zhong.github.io/HowToGetAlong/)。切换 English 后，页面控件会显示英文，书目条目仍是简体中文。
 - **本地使用**：在仓库目录运行 `python -m http.server 8000`，再打开 `http://localhost:8000/`。浏览器直接打开 HTML 文件时无法读取本地数据，可使用下面的离线版。
-- **离线单文件**：运行 `node tools/offline/build.mjs`，生成 `dist/HowToGetAlong.html`。书和检索页都在里面，双击即可打开，也可以通过微信发送。
+- **离线单文件**：运行 `node tools/offline/build.mjs`，生成 `dist/HowToGetAlong.html`。书和检索页都在里面，双击即可打开，也可以通过微信发送；[GitHub Releases](https://github.com/yuzhang-zhong/HowToGetAlong/releases/tag/guide-latest) 会随正文更新提供最新版下载。
 
 术语可以查[术语表](docs/术语表.md)。
 
@@ -105,9 +107,11 @@ node tools/build-prompt-only.mjs  # 生成纯提示词精选版
 node tools/validate.mjs           # 校验条目格式，CI 也会运行
 ```
 
-## 贡献
+## 贡献与翻译
 
 提交 PR 前请先读[写作规范](docs/写作规范.md)。新增条目要附核实记录和一手来源；经验类条目可以标 C，并在备注里说明依据来自经验。修改正文后运行 `node tools/validate.mjs`，确认通过再提交。
+
+简体中文正文是内容底本。英文界面和 README 便于浏览仓库，正文翻译按[翻译指南](docs/translation-guide.md)逐章提交并复核；译文发布前需要对照中文条目核实数字、证据等级和适用范围。纠错和新建议可从仓库的 Issues 表单提交。
 
 ## 路线图
 

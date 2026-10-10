@@ -1,0 +1,35 @@
+name: 译文与语言问题
+description: 报告翻译问题，或提议维护一个经过复核的章节译本
+title: "[翻译] "
+labels: ["translation"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: 语言
+      options:
+        - English
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: file_item
+    attributes:
+      label: 章节、文件或条目
+      placeholder: 第 2 章第 4 条 / README.en.md
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 需要处理的内容
+      description: 如报告译文错误，请附中文原文、当前译文和建议写法。
+    validations:
+      required: true
+  - type: checkboxes
+    id: source_check
+    attributes:
+      label: 复核状态
+      options:
+        - label: 我会对照简体中文底本核对数字、证据等级、适用范围和安全步骤。
+          required: true

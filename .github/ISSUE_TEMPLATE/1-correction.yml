@@ -1,0 +1,33 @@
+name: 条目纠错
+description: 报告条目中的事实、数字、来源或链接问题
+title: "[纠错] "
+labels: ["content correction"]
+body:
+  - type: input
+    id: chapter_item
+    attributes:
+      label: 章节与条目编号
+      placeholder: 第 3 章第 5 条
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 需要更正的内容
+      description: 请说明你看到的问题和它可能造成的误解。
+    validations:
+      required: true
+  - type: input
+    id: primary_source
+    attributes:
+      label: 原始来源或官方文件
+      description: 请优先提供论文 DOI、期刊页面或官方文件链接。
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: 核对过程
+      description: 写明来源中的相关段落、数字或页面位置。
+    validations:
+      required: true
