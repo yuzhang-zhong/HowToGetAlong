@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">关系指南图标</title>
+  <path d="M8 14.5A8.5 8.5 0 0 1 16.5 6h22A8.5 8.5 0 0 1 47 14.5v13a8.5 8.5 0 0 1-8.5 8.5H25l-9 7v-7.3a8.5 8.5 0 0 1-8-8.2z" fill="#f7e6d4" stroke="#176b69" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M24 28.5A8.5 8.5 0 0 1 32.5 20h15a8.5 8.5 0 0 1 8.5 8.5v10a8.5 8.5 0 0 1-8.5 8.5H45l-8 6v-6h-4.5a8.5 8.5 0 0 1-8.5-8.5z" fill="#fffaf4" stroke="#d87961" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M39.8 31.2c-1.9-2.2-5.5-.9-5.5 2 0 3.2 5.5 6.3 5.5 6.3s5.5-3.1 5.5-6.3c0-2.9-3.6-4.2-5.5-2z" fill="#d87961"/>
+</svg>
