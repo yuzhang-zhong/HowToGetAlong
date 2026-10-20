@@ -101,11 +101,13 @@
 ```bash
 git clone https://github.com/yuzhang-zhong/HowToGetAlong.git
 cd HowToGetAlong
-python -m http.server 8000        # 在线检索页：http://localhost:8000/
 node tools/offline/build.mjs      # 离线单文件：dist/HowToGetAlong.html
 node tools/build-prompt-only.mjs  # 生成纯提示词精选版
 node tools/validate.mjs           # 校验条目格式，CI 也会运行
+python -m http.server 8000        # 最后启动服务：http://localhost:8000/
 ```
+
+本地服务会持续占用当前终端；按 `Ctrl+C` 停止，或另开一个终端运行构建命令。
 
 ## 贡献与翻译
 
@@ -115,9 +117,10 @@ node tools/validate.mjs           # 校验条目格式，CI 也会运行
 
 ## 路线图
 
-后续计划见[路线图](docs/路线图.md)：补充各章条目（参考原作每章 20 条以上的密度）、人工复核文献、发布 GitHub Pages，并参考原作的 Release 流水线自动构建 EPUB、PDF 和 Anki 卡片。
+当前已有在线检索实现与[离线 HTML 自动发布](https://github.com/yuzhang-zhong/HowToGetAlong/releases/tag/guide-latest)。后续重点见[路线图](docs/路线图.md)：补充各章条目（参考原作每章 20 条以上的密度）、人工复核文献，以及规划 EPUB、PDF 和 Anki 卡片等更多导出格式。
 
 ## 许可
 
 - 正文（`book/`、`docs/`）：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)，详见 [LICENSE-CONTENT.md](LICENSE-CONTENT.md)。
 - skill、检索页和构建代码：[MIT](LICENSE-CODE.md)。
+
