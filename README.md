@@ -98,14 +98,20 @@
 
 开 GitHub Pages 就能使用检索页；需要离线时可以构建单文件版。本地完整体验：
 
+需要 Git、Node.js（CI 使用 Node.js 20）和 Python 3（用于本地服务）。克隆时保留仓库的 LF 换行：
+
 ```bash
-git clone https://github.com/yuzhang-zhong/HowToGetAlong.git
+git clone --config core.autocrlf=false https://github.com/yuzhang-zhong/HowToGetAlong.git
 cd HowToGetAlong
 node tools/offline/build.mjs      # 离线单文件：dist/HowToGetAlong.html
 node tools/build-prompt-only.mjs  # 生成纯提示词精选版
 node tools/validate.mjs           # 校验条目格式，CI 也会运行
 python -m http.server 8000        # 最后启动服务：http://localhost:8000/
 ```
+
+**Windows 换行提示：** 当前校验器要求章节使用 LF 换行；Git 自动转换为 CRLF 后会出现「标题行无法解析」及计数错误。上方 `--config core.autocrlf=false` 为这份克隆保留 LF。若已有克隆遇到这些错误，可在另一个空目录按上方命令重新克隆，保留原目录中的修改。
+
+当前版本校验通过时应看到 `274 条 · A126 B122 C26 · 0 个警告`。构建后打开 `dist/HowToGetAlong.html`，或在本地检索页搜索「道歉」，检查条目、证据等级与来源；校验通过只说明格式和计数一致，文献仍需参照[核实记录](docs/核实记录/)人工复核。
 
 本地服务会持续占用当前终端；按 `Ctrl+C` 停止，或另开一个终端运行构建命令。
 

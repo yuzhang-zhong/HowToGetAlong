@@ -63,6 +63,24 @@ The repository includes a Chinese relationship-guide skill for Claude Code and C
 
 The current counts are A: 126, B: 122, and C: 26. The grade reflects the source and study design; it does not rate a person or relationship.
 
+## Run locally
+
+Use Git, Node.js (CI uses Node.js 20), and Python 3 for the local server. Preserve the repository's LF line endings when cloning:
+
+```bash
+git clone --config core.autocrlf=false https://github.com/yuzhang-zhong/HowToGetAlong.git
+cd HowToGetAlong
+node tools/validate.mjs
+node tools/offline/build.mjs
+python -m http.server 8000
+```
+
+**Windows line endings:** The current validator expects LF in chapter files. Git's automatic CRLF conversion causes heading-parse and count errors. The clone option above preserves LF for this checkout. If an existing clone shows those errors, clone into a separate empty directory and keep any edits in the original.
+
+At the current revision, validation should report `274 条 · A126 B122 C26 · 0 个警告` (274 entries, the stated grade counts, and zero warnings). Open `dist/HowToGetAlong.html` for the offline edition, or visit `http://localhost:8000/?lang=en` and search “apology” to inspect the Chinese entries and their sources. This validates structure and counts; the seed edition still requires human review of its literature.
+
+The server keeps the terminal busy until you press `Ctrl+C`. Run later build commands in another terminal or after stopping it.
+
 ## Contribute
 
 Before proposing a new recommendation, read the [writing guide](docs/写作规范.md). New entries need a verification record. Research-based claims need a primary source; experience-based suggestions can be graded C when their basis is stated clearly.
