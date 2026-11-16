@@ -15,21 +15,24 @@
   <a href="#contribute-and-translate">Contribute</a>
 </p>
 
-<p align="center">
-  <img src="assets/four-panel-friendship.png" width="900" alt="Two friendly robots share and celebrate good news in a four-panel comic">
-</p>
+**18 chapters · 274 recommendations**, written in Simplified Chinese. Start with the relationship question you have; there is no need to read in order. Each entry describes **discomfort, time, and persistence**, the potential benefit, its evidence grade, sources, and limitations. The guide does not diagnose anyone or decide whether you should stay in a relationship.
 
-<p align="center"><sub>Receiving a friend's good news with care. See <a href="book/01-别让关系慢慢变淡.md">chapter 1, item 4</a>.</sub></p>
-
-How do you respond to a friend's good news, say no, or pause an escalating argument? This guide is for everyday readers navigating friendship, work, family, dating, sex and intimacy, or unsafe relationships.
-
-**18 chapters · 274 recommendations.** Start with the problem you have; there is no need to read in order. Each entry describes **discomfort, time, and persistence**, the potential benefit, its evidence grade, sources, and limitations. The guide does not diagnose anyone or decide whether you should stay in a relationship.
-
-> **Seed edition:** The recommendations have gone through three rounds of AI-assisted literature searches. Full-text sources have not yet all received human review. Check the original source before citing an entry; items marked “awaiting human review” need particular attention. See the [verification records](docs/核实记录/).
+The seed edition has had three rounds of AI-assisted searches, but human full-text review is incomplete. See [evidence and verification](#evidence-and-verification) before citing it.
 
 > **Safety before communication techniques:** Ongoing violence, threats, suicide risk, or abuse of a minor are not ordinary communication exercises. Prioritize the safety and support entries in [chapter 4](book/04-别陷进危险关系.md); see [chapter 16](book/16-别在网上把自己交出去.md) for online tracking, scams, and intimate-image risks. The guide does not replace counseling, psychiatric care, or legal advice. Laws and public-service resources concern mainland China; check their dates and official sources.
 
-**On this page:** [Start here](#start-here) · [Chapters](#browse-the-book) · [Search and offline reading](#search-and-offline-reading) · [Evidence](#evidence-and-verification) · [AI-assisted reading](#ask-an-ai-assistant-to-use-the-book) · [Local setup](#run-locally) · [License](#license)
+<details>
+<summary>On this page</summary>
+
+- [Start here](#start-here)
+- [Chapters](#browse-the-book)
+- [Search and offline reading](#search-and-offline-reading)
+- [Evidence](#evidence-and-verification)
+- [AI-assisted reading](#ask-an-ai-assistant-to-use-the-book)
+- [Local setup](#run-locally)
+- [License](#license)
+
+</details>
 
 ## Start here
 
@@ -43,6 +46,17 @@ How do you respond to a friend's good news, say no, or pause an escalating argum
 | Sources to check or a way to help | Start with [evidence and verification](#evidence-and-verification), then the [writing guide](docs/写作规范.md) and [contribution steps](#contribute-and-translate). |
 
 **Read the remarks before trying a recommendation.** They describe the study population, disputes, exceptions, and limits on applying the findings elsewhere. Look up unfamiliar terms in the [glossary](docs/术语表.md), and open the source when you need to check a claim.
+
+<details>
+<summary>An everyday example: receiving a friend's good news</summary>
+
+<p align="center">
+  <img src="assets/four-panel-friendship.png" width="900" alt="Two friendly robots share and celebrate good news in a four-panel comic">
+</p>
+
+Receiving a friend's good news with care. See [chapter 1, item 4](book/01-别让关系慢慢变淡.md).
+
+</details>
 
 ## Browse the book
 
@@ -111,6 +125,8 @@ The [writing guide](docs/写作规范.md) defines entry format, effort tags, ben
 The grade does not rate a person or relationship. Entries awaiting verification must not be treated as settled conclusions.
 
 ### Literature verification
+
+> **Seed edition:** The recommendations have gone through three rounds of AI-assisted literature searches. Full-text sources have not yet all received human review. Check the original source before citing an entry; items marked “awaiting human review” need particular attention. See the [verification records](docs/核实记录/).
 
 New entries begin with a primary paper or official document, and unresolved details are recorded alongside the findings. Three rounds of AI-assisted searches are **not a substitute for human full-text review**. Outstanding review lists are kept at the end of each batch:
 
