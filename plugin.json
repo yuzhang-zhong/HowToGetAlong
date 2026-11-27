@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "relationship-guide",
+  "description": "Evidence-graded interpersonal relationship and communication advisor Skill powered by a 274-entry A/B/C cited handbook with explicit discomfort/time costs and safety-first gates.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Yuzhang Zhong",
+    "url": "https://github.com/yuzhang-zhong"
+  },
+  "homepage": "https://github.com/yuzhang-zhong/HowToGetAlong",
+  "repository": "https://github.com/yuzhang-zhong/HowToGetAlong",
+  "license": "MIT",
+  "keywords": [
+    "interpersonal-relationships",
+    "communication",
+    "conflict-resolution",
+    "boundaries",
+    "apologies",
+    "evidence-based",
+    "domestic-violence-safety",
+    "handbook"
+  ]
+}
