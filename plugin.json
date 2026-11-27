@@ -11,13 +11,21 @@
   "repository": "https://github.com/yuzhang-zhong/HowToGetAlong",
   "license": "MIT",
   "keywords": [
+    "agent-skills",
+    "agent-skill",
+    "claude-skill",
+    "copilot-skill",
+    "codex-skill",
+    "cursor-skill",
     "interpersonal-relationships",
     "communication",
     "conflict-resolution",
+    "nonviolent-communication",
     "boundaries",
-    "apologies",
     "evidence-based",
-    "domestic-violence-safety",
-    "handbook"
+    "psychology",
+    "anti-hallucination",
+    "open-book",
+    "safety"
   ]
 }

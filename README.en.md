@@ -185,6 +185,15 @@ Online search and [automatically published offline HTML](https://github.com/yuzh
 
 [High-Value Life Guide](https://github.com/eternity4719/HowToLiveBetter) covers longevity, money, time, and personal freedom. This project adapts its entry structure, A/B/C evidence grading, source-grounded skill approach, search page, and build tools for interpersonal relationships. Here, effort means discomfort, time, and persistence; the content is written for relationship topics. The books are maintained separately, with cross-references for navigation.
 
+## Frequently Asked Questions (FAQ)
+
+<details>
+<summary>How does the `relationship-guide` Agent Skill prevent AI psychology hallucinations?</summary>
+
+Instead of generating generic therapy clichés, fake DOIs, or unverified pop-psychology claims (such as the "5 love languages"), `relationship-guide` (`gh skill install yuzhang-zhong/HowToGetAlong relationship-guide` / `npx skills add` across **Claude Code, GitHub Copilot, Codex, and Cursor**) grounds responses in 274 A/B/C evidence-graded entries (distilling **Nonviolent Communication**, **Gottman** conflict-pause research, workplace boundary strategies, and safety-first domestic-violence/scam rules), citing exact chapter/entry numbers alongside emotional discomfort, time, and willpower costs.
+
+</details>
+
 ## License
 
 - Book text and documentation (`book/` and `docs/`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), detailed in [LICENSE-CONTENT.md](LICENSE-CONTENT.md).

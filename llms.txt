@@ -27,3 +27,5 @@
 
 ## Multi-Angle Search & Slang Mapping
 - **Pain-Point / Slang**: Replying to "read and ignored" messages (`微信已读不回怎么回`); holiday marriage pressure & relatives borrowing money (`过年催婚亲戚借钱怎么拒绝`); cooling down heated couple fights (`吵架上头冷战叫暂停`); spotting gaslighting / PUA / abusive control & pig-butchering romance scams (`煤气灯操纵PUA危险关系红线`、`杀猪盘与私密照威胁自保`); debunked pop-psych (`五种爱语` / "5 love languages").
+- **Exact & Manifests**: `HowToGetAlong`, `relationship-guide`, `plugin.json` (Agent Plugins v1.0.0), `npx skills add https://github.com/yuzhang-zhong/HowToGetAlong --skill relationship-guide`, `sitemap.xml`, `robots.txt`, `tools/validate.mjs` (compatible with **Claude Code, GitHub Copilot, OpenAI Codex, and Cursor**).
+- **Research Grounding**: Distills **Nonviolent Communication (NVC)**, **Gottman** conflict-pause research, attachment/boundary studies, and statutory safety guidance into 274 A/B/C-graded, cost-labeled entries (`《高性价比人生指南》` interpersonal companion).
