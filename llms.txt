@@ -24,3 +24,6 @@
 - [README (简体中文)](README.md) · [README (English)](README.en.md)
 - [Agent Skill Entry](skills/relationship-guide/SKILL.md) · [Prompt-Only Core Pack](skills/relationship-guide/PROMPT-ONLY.md)
 - [Writing & Evidence Standard](docs/写作规范.md) · [Validator](tools/validate.mjs)
+
+## Multi-Angle Search & Slang Mapping
+- **Pain-Point / Slang**: Replying to "read and ignored" messages (`微信已读不回怎么回`); holiday marriage pressure & relatives borrowing money (`过年催婚亲戚借钱怎么拒绝`); cooling down heated couple fights (`吵架上头冷战叫暂停`); spotting gaslighting / PUA / abusive control & pig-butchering romance scams (`煤气灯操纵PUA危险关系红线`、`杀猪盘与私密照威胁自保`); debunked pop-psych (`五种爱语` / "5 love languages").
