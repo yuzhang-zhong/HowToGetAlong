@@ -185,6 +185,10 @@ python -m http.server 8000        # 最后启动服务：http://localhost:8000/
 
 [《高性价比人生指南》](https://github.com/eternity4719/HowToLiveBetter)讨论寿命、金钱、时间和人身自由；本书把它的条目结构、A/B/C 证据分级、反幻觉 skill、检索页和构建工具，用在了人际关系主题上。成本维度调整为难受、时间和毅力，内容按关系领域重新撰写。两本书各自维护，交叉引用用来指路。
 
+## English
+
+**High-Value Relationship Guide** (*HowToGetAlong* / *高性价比关系指南*) is an open, evidence-graded interpersonal communication and relationship handbook covering **18 chapters and 274 practical entries**: everyday closeness, conflict de-escalation and pause rules, difficult conversations (apologizing, saying no, money talks, setting boundaries), friendship and loneliness, workplace politics and harassment defense, family/in-law dynamics, dating and breakups, digital messaging etiquette, marriage repair, domestic-violence safety planning, and online scam/stalking protection. Every tip explicitly states its emotional/time/effort cost, expected benefit domain, primary citations, and A/B/C evidence grade, paired with an [online filterable web search](https://yuzhang-zhong.github.io/HowToGetAlong/?lang=en), a single-file offline HTML release, and an anti-hallucination Agent Skill ([`skills/relationship-guide/SKILL.md`](skills/relationship-guide/SKILL.md)). See the [full English README](README.en.md).
+
 ## 许可
 
 - 正文（`book/`、`docs/`）：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)，详见 [LICENSE-CONTENT.md](LICENSE-CONTENT.md)。

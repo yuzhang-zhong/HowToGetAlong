@@ -1,0 +1,13 @@
+# 高性价比关系指南 · High-Value Relationship Guide (HowToGetAlong)
+
+> Evidence-informed interpersonal communication, conflict resolution, boundary setting, and relationship safety handbook (18 chapters, 274 entries graded A/B/C by study design and primary source citations).
+
+- Online Search & Reader: https://yuzhang-zhong.github.io/HowToGetAlong/
+- English UI Entry: https://yuzhang-zhong.github.io/HowToGetAlong/?lang=en
+- Source Repository: https://github.com/yuzhang-zhong/HowToGetAlong
+- Agent Skill: `skills/relationship-guide/SKILL.md`
+
+## Core Coverage
+- Everyday closeness, active-constructive responding, conflict pause rules, apologies, refusals, and difficult talks.
+- Friendship, loneliness, workplace conflict/harassment defense, family & intergenerational boundaries, dating & breakups, digital messaging etiquette, marriage repair, and parenting relationships.
+- Safety-first chapters (Chapter 4 domestic violence / stalking / crisis & Chapter 16 online romance scams / non-consensual imagery / tracking defense).

@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    {
+      "name": "relationship-guide",
+      "description": "Evidence-graded interpersonal relationship, communication, conflict, boundary, and safety handbook + anti-hallucination Agent Skill (18 chapters, 274 A/B/C cited entries).",
+      "version": "1.0.0",
+      "path": "../skills/relationship-guide"
+    }
+  ]
+}

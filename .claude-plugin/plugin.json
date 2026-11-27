@@ -1,0 +1,8 @@
+{
+  "name": "relationship-guide",
+  "version": "1.0.0",
+  "description": "Evidence-graded interpersonal relationship, communication, conflict, boundary, and safety handbook + anti-hallucination Agent Skill (18 chapters, 274 A/B/C cited entries).",
+  "author": "yuzhang-zhong",
+  "license": "MIT",
+  "skills": ["../skills/relationship-guide/SKILL.md"]
+}
