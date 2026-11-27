@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use or reference this project, please cite it using the metadata below."
+type: software
+title: "High-Value Relationship Guide (高性价比关系指南 / HowToGetAlong): Evidence-Graded Interpersonal Communication Handbook and Agent Skill"
+authors:
+  - family-names: "Zhong"
+    given-names: "Yuzhang"
+repository-code: "https://github.com/yuzhang-zhong/HowToGetAlong"
+url: "https://yuzhang-zhong.github.io/HowToGetAlong/"
+license: "MIT"
+abstract: "Open 18-chapter, 274-entry interpersonal relationship, communication, boundary-setting, and personal-safety handbook graded A/B/C by study design (126 A, 122 B, 26 C) and labeled with emotional discomfort, time, and persistence costs, paired with an online filterable search app, offline single-file HTML bundle, and anti-hallucination Agent Skill."
+keywords:
+  - "interpersonal-relationships"
+  - "communication"
+  - "conflict-resolution"
+  - "apologies"
+  - "boundaries"
+  - "workplace-communication"
+  - "domestic-violence-prevention"
+  - "evidence-based"
+  - "agent-skill"
+  - "handbook"

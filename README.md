@@ -187,6 +187,12 @@ python -m http.server 8000        # 最后启动服务：http://localhost:8000/
 
 [《高性价比人生指南》](https://github.com/eternity4719/HowToLiveBetter)讨论寿命、金钱、时间和人身自由；本书把它的条目结构、A/B/C 证据分级、反幻觉 skill、检索页和构建工具，用在了人际关系主题上。成本维度调整为难受、时间和毅力，内容按关系领域重新撰写。两本书各自维护，交叉引用用来指路。
 
+## 常见问题 · FAQ
+
+- **这本指南和市面上常见的「高情商话术 / 五种爱语」鸡汤有什么不同？** 每条建议都必须标明一手研究出处与 A/B/C 证据等级（复制失败或无实证的流行说法集中收在第 10 章「反面清单」降级说明），同时写清要付出多少「难受、时间和毅力」，遇到家暴、跟踪或杀猪盘则直接切入第 4、16 章安全自保流程。
+- **How does the `relationship-guide` Agent Skill prevent AI hallucination?** Installed via `gh skill install yuzhang-zhong/HowToGetAlong relationship-guide`, the Skill requires the assistant to retrieve matching entries from `book/`, cite exact chapter/entry numbers and A/B/C grades, and explicitly say when a topic is not covered instead of fabricating studies.
+- **Can I read and search the whole book offline without a server?** Yes—download the single-file `HowToGetAlong.html` from [GitHub Releases](https://github.com/yuzhang-zhong/HowToGetAlong/releases/tag/guide-latest) and open it in any browser, or use the [online search page](https://yuzhang-zhong.github.io/HowToGetAlong/).
+
 ## English
 
 **High-Value Relationship Guide** (*HowToGetAlong* / *高性价比关系指南*) is an open, evidence-graded interpersonal communication and relationship handbook covering **18 chapters and 274 practical entries**: everyday closeness, conflict de-escalation and pause rules, difficult conversations (apologizing, saying no, money talks, setting boundaries), friendship and loneliness, workplace politics and harassment defense, family/in-law dynamics, dating and breakups, digital messaging etiquette, marriage repair, domestic-violence safety planning, and online scam/stalking protection. Every tip explicitly states its emotional/time/effort cost, expected benefit domain, primary citations, and A/B/C evidence grade, paired with an [online filterable web search](https://yuzhang-zhong.github.io/HowToGetAlong/?lang=en), a single-file offline HTML release, and an anti-hallucination Agent Skill ([`skills/relationship-guide/SKILL.md`](skills/relationship-guide/SKILL.md)). See the [full English README](README.en.md).
