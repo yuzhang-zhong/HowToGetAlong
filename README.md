@@ -2,7 +2,7 @@
   <img src="assets/relationship-mark.svg" width="72" height="72" alt="关系指南图标：两个人之间的对话气泡">
 </p>
 
-<h1 align="center">高性价比关系指南</h1>
+<h1 align="center">高性价比关系指南 · Evidence-Graded Relationship &amp; Communication Handbook</h1>
 
 <p align="center">关系里那些难开口、想不通、容易受伤的时刻，翻一条能用的建议。<br>有 A/B/C 学术证据分级、标明难受与时间成本的人际关系与沟通开源指南（含吵架暂停、道歉、拒绝、职场边界与反家暴安全）及反幻觉 AI 查询 Skill。<br>Open evidence-graded handbook, searchable web app, and anti-hallucination Agent Skill for interpersonal relationships and communication (conflict pause, apologies, boundaries, workplace, domestic-violence safety) with A/B/C study citations and explicit emotional/time costs.</p>
 
