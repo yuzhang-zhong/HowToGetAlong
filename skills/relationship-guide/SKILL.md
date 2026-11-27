@@ -1,6 +1,7 @@
 ---
 name: relationship-guide
-description: "Evidence-graded interpersonal relationship & communication advisor Agent Skill powered by High-Value Relationship Guide (HowToGetAlong / 《高性价比关系指南》, 18 chapters, 274 A/B/C cited entries). Use when answering concrete relationship, communication, conflict, apology, refusal, boundary-setting, friendship, workplace bullying, family, breakup, domestic-violence safety, or online-scam questions with strict chapter/entry citations, explicit cost/benefit trade-offs, and zero fabricated studies. 用《高性价比关系指南》正文回答具体的关系和沟通问题：这句话怎么说、架怎么吵、该不该道歉、怎么拒绝、边界怎么立、一段关系有没有到红线、出事了先做什么。先把相关条目查出来再答，按成本（难受/时间/毅力）、收益量级和证据等级 A/B/C 排序，每条注明出自第几章第几条。查不到就说查不到。触发词：怎么开口、怎么说、怎么道歉、怎么拒绝、吵架、冷战、催婚、边界、被控制、PUA、煤气灯、朋友借钱、已读不回、交朋友、孤独、家暴、被跟踪、职场霸凌、孤立排挤。"
+description: "Evidence-graded handbook & anti-hallucination AI lookup Skill for everyday interpersonal relationship and communication problems (High-Value Relationship Guide / 《高性价比关系指南》, 18 chapters, 274 A/B/C cited tips): how to pause a heated argument, apologize, say no, set boundaries at work or with family, handle relatives borrowing money, and spot domestic-violence or scam red flags—rating discomfort, time cost, and study evidence level. 用《高性价比关系指南》回答人际相处与怎么说话问题：吵架叫停、怎么道歉、怎么拒绝、立边界、亲戚借钱、职场排挤与危险关系家暴自保，按难受/时间/毅力成本与A/B/C证据等级排序，注明章条，不瞎编。"
+license: MIT
 ---
 
 # 关系问题：按《高性价比关系指南》查了再答

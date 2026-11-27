@@ -1,6 +1,25 @@
 {
   "name": "relationship-guide",
   "version": "1.0.0",
-  "description": "Evidence-graded interpersonal relationship, communication, conflict, boundary, and safety handbook + anti-hallucination Agent Skill (18 chapters, 274 A/B/C cited entries).",
-  "skills": ["../skills/relationship-guide/SKILL.md"]
+  "description": "Evidence-graded handbook, web search app, and anti-hallucination AI lookup Skill for interpersonal relationships and communication (conflict pause, apologies, saying no, boundaries, workplace, and domestic-violence safety).",
+  "author": {
+    "name": "yuzhang-zhong"
+  },
+  "homepage": "https://github.com/yuzhang-zhong/HowToGetAlong",
+  "repository": "https://github.com/yuzhang-zhong/HowToGetAlong",
+  "keywords": [
+    "agent-skill",
+    "interpersonal-relationships",
+    "communication",
+    "conflict-resolution",
+    "boundaries",
+    "apologies",
+    "evidence-based",
+    "domestic-violence-safety",
+    "handbook"
+  ],
+  "skills": [
+    "./skills/relationship-guide"
+  ],
+  "license": "MIT"
 }

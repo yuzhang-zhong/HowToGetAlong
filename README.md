@@ -15,6 +15,8 @@
   <a href="#贡献与翻译">参与完善</a>
 </p>
 
+> **一句话速览 / Quick answer：** 一本讲人际相处与怎么说话的开源实用手册与反幻觉 AI 查询技能（`relationship-guide`）：覆盖吵架怎么叫停、怎么道歉、怎么拒绝别人、亲戚借钱、职场排挤立边界与危险关系家暴自保，每条建议都标明心理难受程度（discomfort）、所需时间与 A/B/C 研究证据等级，让 AI 照书核对出处回答而不瞎编。 / An open practical guide, web search app, and anti-hallucination AI lookup Skill for everyday relationship & communication problems—how to pause a heated argument, apologize, say no, set boundaries at work or with family, and spot abusive red flags—rating emotional discomfort, time needed, and study evidence level.
+
 **18 章、274 条建议**，从日常相处、难开口的话，到亲密关系与自我保护，按你现在的问题查阅，不必从头读完。每条都写清要花多少**难受、时间和毅力**，可能换来什么，以及证据等级、出处和适用限制。它提供可核对的参考，不替你决定该分开还是继续，也不给任何人下诊断。
 
 种子版已完成三轮 AI 文献检索，尚未逐篇人工全文复核。引用前请先看[证据与核实](#证据与核实)。
