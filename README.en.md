@@ -2,9 +2,9 @@
   <img src="assets/relationship-mark.svg" width="72" height="72" alt="Two connected conversation bubbles">
 </p>
 
-<h1 align="center">High-Value Relationship Guide</h1>
+<h1 align="center">High-Value Relationship Guide · Evidence-Graded Interpersonal Relationships &amp; Communication Handbook</h1>
 
-<p align="center">Evidence-informed reading for difficult conversations, everyday connection, and staying safe.</p>
+<p align="center">Evidence-informed open handbook, searchable web app, and anti-hallucination Agent Skill for interpersonal relationships, communication, conflict pause, apologies, boundaries, workplace issues, and domestic-violence safety.</p>
 
 <p align="center"><a href="README.md">简体中文</a> · <a href="README.en.md">English</a> · <a href="https://yuzhang-zhong.github.io/HowToGetAlong/?lang=en">English search interface</a></p>
 
@@ -15,7 +15,7 @@
   <a href="#contribute-and-translate">Contribute</a>
 </p>
 
-**18 chapters · 274 recommendations**, written in Simplified Chinese. Start with the relationship question you have; there is no need to read in order. Each entry describes **discomfort, time, and persistence**, the potential benefit, its evidence grade, sources, and limitations. The guide does not diagnose anyone or decide whether you should stay in a relationship.
+**18 chapters · 274 recommendations**, written in Simplified Chinese. Start with the relationship question you have; there is no need to read in order. Each entry explicitly labels **discomfort / emotional cost, time cost, and persistence cost**, the potential benefit domain, its A/B/C research evidence grade, primary sources, and limitations. The guide does not diagnose anyone or decide whether you should stay in a relationship.
 
 The seed edition has had three rounds of AI-assisted searches, but human full-text review is incomplete. See [evidence and verification](#evidence-and-verification) before citing it.
 
