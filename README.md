@@ -15,7 +15,7 @@
   <a href="#贡献与翻译">参与完善</a>
 </p>
 
-> **一句话速览 / Quick answer：** 一本讲人际相处与怎么说话的开源实用手册、单文件离线 HTML 检索与反幻觉 AI 查询技能（`relationship-guide`）：拒绝「五种爱语」等无实证流行鸡汤，覆盖微信已读不回、过年催婚、煤气灯操纵（gaslighting）/ PUA 危险信号识别，覆盖吵架怎么叫停、怎么道歉、怎么拒绝别人、亲戚借钱、职场排挤立边界与危险关系家暴/杀猪盘自保，每条建议都标明心理难受程度（discomfort）、所需时间与 A/B/C 研究证据等级。 / An open evidence-graded interpersonal relationships handbook, offline single-file HTML search app, and anti-hallucination Agent Skill (`relationship-guide`)—debunking unverified pop-psychology myths like the "5 love languages", putting domestic-violence and scam safety first, and rating 274 tips across 18 chapters by emotional discomfort, time cost, and A/B/C study evidence.
+> **一句话速览 / Quick answer：** 一本讲人际相处与怎么说话的开源实用手册、单文件离线 HTML 检索与反幻觉 AI 查询技能（`relationship-guide`）：拒绝「五种爱语」等无实证流行鸡汤，覆盖微信已读不回、过年催婚、煤气灯操纵（gaslighting）/ PUA 危险信号识别，覆盖吵架怎么叫停、怎么道歉、怎么拒绝别人、亲戚借钱、职场排挤立边界与危险关系家暴/杀猪盘自保，每条建议都标明心理难受程度（discomfort）、所需时间与 A/B/C 研究证据等级。 / An open evidence-graded interpersonal relationships handbook, offline single-file HTML search app, and anti-hallucination Agent Skill (`relationship-guide`)—debunking unverified pop-psychology myths like the "5 love languages", putting gaslighting, domestic-violence, and romance scam safety first, and rating 274 tips across 18 chapters by emotional discomfort, time cost, and A/B/C study evidence.
 
 **18 章、274 条建议**，从日常相处、难开口的话，到亲密关系与自我保护，按你现在的问题查阅，不必从头读完。每条都写清要花多少**难受、时间和毅力**，可能换来什么，以及证据等级、出处和适用限制。它提供可核对的参考，不替你决定该分开还是继续，也不给任何人下诊断。
 
